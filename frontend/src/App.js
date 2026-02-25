@@ -21,7 +21,7 @@ function App() {
     setThinking(true);
 
     try {
-      const res = await fetch('http://localhost:8000/chat', {
+      const res = await fetch('http://16.171.11.169:8000/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: updatedMessages }),
