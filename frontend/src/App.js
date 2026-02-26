@@ -21,7 +21,7 @@ function App() {
     setThinking(true);
 
     try {
-      const res = await fetch('https://16.171.11.169/chat', {
+      const res = await fetch('https://mubarakschatbot.duckdns.org/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: updatedMessages }),
